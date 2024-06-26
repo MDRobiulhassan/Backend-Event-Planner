@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>event schedule</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="schedule.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark">
+    <a class="navbar-brand" href="index.html">ARSW INC.</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center text-align-center" id="collapsibleNavId">
+      <ul class="navbar-nav mt-2 mt-lg-0 mx-auto">
+        <li class="nav-item mr-2">
+          <a class="nav-link" href="eventcreate.html">Create Event <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item mr-2">
+          <a class="nav-link active" href="schedule.html">Event Schedule</a>
+        </li>
+        <li class="nav-item mr-2">
+          <a class="nav-link" href="pricing.html">Pricing</a>
+        </li>
+        <li class="nav-item mr-2">
+          <a class="nav-link mx-auto" href="infornation.html">About Us</a>
+        </li>
+      </ul>
+      <div class="d-flex justify-content-center">
+        <a href="login.html" class="btn btn-outline-light mr-3">Log In</a>
+        <a href="signup.html" class="btn btn-outline-light mr-3">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="form-group d-flex justify-content-end">
+      <input type="text" id="searchEventName" class="form-control mr-2" placeholder="Enter event name">
+      <button class="btn btn-primary" onclick="searchEvent()">Search</button>
+    </div>
+    <table class="table text-white text-center">
+      <thead>
+        <tr>
+          <th scope="col">Event Name</th>
+          <th scope="col">Venue</th>
+          <th scope="col">Date</th>
+          <th scope="col">Time</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+
+        <tr>
+          <td>Joy Bangla Concert</td>
+          <td>CJKS Gymnasium Field</td>
+          <td>17-02-2024</td>
+          <td>07.30pm</td>
+        </tr>
+        <tr>
+          <td>Pedri Weds Leonor</td>
+          <td>The King OF Chittagong</td>
+          <td>18-02-2024</td>
+          <td>06.00pm</td>
+        </tr>
+        <tr>
+          <td>TechXperience Summit</td>
+          <td>Radisson Blu</td>
+          <td>19-02-2024</td>
+          <td>12.00am</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Premier University</td>
+          <td>21-02-2024</td>
+          <td>11.00am</td>
+        </tr>
+        <tr>
+          <td>Alex Weds Alexa</td>
+          <td>K.B Convention Hall</td>
+          <td>10-03-2024</td>
+          <td>08.00pm</td>
+        </tr>
+        <tr>
+          <td>Gemini Weds GPT</td>
+          <td>Radisson Blu</td>
+          <td>18-03-2024</td>
+          <td>08.00pm</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <footer class="text-white">
+    <p>&copy; 2024 Samin Osman. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/samin.mohammad05" class="text-white mr-3 fb"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/samin0sm/" class="text-white mr-3 ins"><i class="fa fa-instagram"></i></a>
+      <a href="#" class="text-white ld mr-3"><i class="fa fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function searchEvent() {
+      var inputEventName = document.getElementById("searchEventName").value.toLowerCase();
+      var tableRows = document.querySelectorAll("tbody tr");
+      tableRows.forEach(function (row) {
+        var eventName = row.cells[0].textContent.toLowerCase();
+        if (eventName.includes(inputEventName)) {
+          row.style.display = "";
+        } else {
+          row.style.display = "none";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

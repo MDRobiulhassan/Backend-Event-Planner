@@ -1,0 +1,58 @@
+body {
+    
+    background-size: cover;
+    
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    position: relative;   
+}
+body a:hover {
+    color: teal;
+    transition: 1s;
+}
+
+body .btn:hover {
+    color: teal;
+    transition: 1s;
+}
+
+.navbar-brand {
+    font-family: cursive;
+}
+
+.navbar-nav .nav-item .nav-link {
+    
+   color: white;
+    font-weight: bolder;
+}
+
+.navbar ul {
+    text-align: center;
+}
+
+nav.btn {
+    border-radius: 50px;
+    font-weight: bolder
+}
+header{
+    background-image: url(pricingheadbg.jpg) ;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+
+}
+
+
+.container{
+ padding: 20px;
+ box-shadow: black;
+}
+

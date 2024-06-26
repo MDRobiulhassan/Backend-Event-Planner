@@ -1,0 +1,91 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/al-elmes-ULHxWq8reao-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    position: relative;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+} 
+
+
+body a:hover {
+    color: teal;
+    transition: 1s;
+}
+
+body .btn:hover {
+    color: teal;
+    transition: 1s;
+}
+
+.navbar-brand {
+    font-family: cursive;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    font-weight: bolder;
+}
+
+.navbar ul {
+    text-align: center;
+}
+
+.btn {
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+main {
+    color: white;
+    padding: 5% 7%;
+    line-height: 1.6em;
+    /* position: fixed; */
+}
+
+.event-photo img {
+    border-radius: 10px;
+}
+
+/* .col-md-6 {
+    max-width: 300px;
+} */
+
+
+footer {
+    color: white;
+    /* position: absolute; */
+    /* bottom: 3%; */
+    width: 100%;
+}
+
+.social-icons .fb i:hover {
+    color: #1877F2;
+    transition: 1s;
+}
+
+.social-icons .gm i:hover {
+    color: red;
+    transition: 1s;
+}
+
+.social-icons .gb i:hover {
+    color: black;
+    transition: 1s;
+}
+
+.social-icons .ld i:hover {
+    color: #0A66C2;
+    transition: 1s;
+}
+
+@media (max-width: 990px) {
+
+    .navbar-dark .collapse {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+    }
+}

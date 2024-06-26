@@ -1,0 +1,61 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/login2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+
+body a:hover,
+.btn:hover {
+    transition: 1.5s;
+}
+
+.col-md-8,
+.col-lg-6 {
+    margin-top: 5%;
+}
+
+.col-md-6 {
+    margin-top: 3%;
+}
+
+.card {
+    font-weight: bold;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.form-control,
+.btn {
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* .card-body hr {
+    border-color: #fff; 
+} */
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+footer {
+    color: white;
+    /* position: absolute; */
+    bottom: 0%;
+    width: 100%;
+}

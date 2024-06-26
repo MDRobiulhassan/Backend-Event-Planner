@@ -1,0 +1,45 @@
+body {
+    background-color: #799296;
+}
+
+.navbar-brand {
+    font-family: cursive;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+header {
+    margin: 0 15px;
+}
+
+.divider {
+    border: 1px solid white;
+}
+
+.user-icon-link i {
+    font-size: 24px;
+    color: black;
+}
+
+.user {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.user:hover {
+    /* transition: 2s;
+    background-color: #dcdcdc; */
+    cursor: pointer;
+}
+
+.card ,.btn{
+    font-weight: bold;
+}
+
+footer{
+    font-weight: bold;
+}

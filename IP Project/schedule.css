@@ -1,0 +1,54 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('calender1.jpg');
+    background-size: cover;
+    text-decoration-color: white;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    position: relative;   
+}
+
+
+body a:hover{
+    color: aliceblue;
+    transition: 1%;
+}
+.navbar-brand {
+    font-family: cursive;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    font-weight: bolder;
+}
+
+
+.navbar ul {
+    text-align: center;
+}
+
+nav .btn {
+    border-radius: 100px;
+    font-weight: bold;
+}
+.container{
+    padding-top: 50px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+table{
+    font-weight: bold;
+}
+
+table th{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
