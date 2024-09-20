@@ -1,0 +1,38 @@
+.form-container {
+    max-width: 3000px;
+    margin: auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-container .form-control {
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-picture {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+form .form-group input {
+    font-weight: bolder;
+}
+
+form #address {
+    font-weight: bolder;
+}
+
+form .btn {
+    font-weight: bolder;
+}
